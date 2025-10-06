@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Microsoft – AI, Cloud, Productivity, Gaming & Apps</title>
+</head>
+
+<body class="max-w-[1440px] mx-auto px-4 sm:px-0 xl:px-15 overflow-x-hidden">
+  <div class="navbar flex flex-wrap justify-between md:justify-normal items-center px-4 md:p-4">
+    <div class="flex items-center">
+      <div class="hamburger inline-block cursor-pointer md:hidden">
+        <div class="h-0.5 w-6 my-1 bg-black"></div>
+        <div class="h-0.5 w-6 my-1 bg-black"></div>
+        <div class="h-0.5 w-6 my-1 bg-black"></div>
+      </div>
+      <div class="search py-1 px-3 md:hidden">
+        <i><img src="assets/icons/search.svg" alt="" /></i>
+      </div>
+    </div>
+    <div class="logo md:order-1 flex md:items-center">
+      <div class="md:absolute md:left-10">
+        <img class="h-14" src="src/images/logo.jpg" alt="logo" />
+      </div>
+      <div class="menu hidden md:block">
+        <ul class="flex space-x-4 relative md:pl-48 pr-8 justify-start">
+          <li class="hover:underline hover:cursor-pointer">
+            <a href="#microsoft365">Microsoft 365</a>
+          </li>
+          <li class="hover:underline hover:cursor-pointer">
+            <a href="#">Office</a>
+          </li>
+          <li class="hover:underline hover:cursor-pointer">
+            <a href="#">Copilot</a>
+          </li>
+          <li class="hover:underline hover:cursor-pointer">
+            <a href="#">Windows</a>
+          </li>
+          <li class="hover:underline hover:cursor-pointer">
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cart text-center md:order-3 md:absolute md:right-8 flex">
+      <div class="search py-1 px-3 hidden md:block">
+        <i><img src="assets/icons/search.svg" alt="" /></i>
+      </div>
+      <div class="py-1 px-3">
+        <i><img src="assets/icons/cart3.svg" alt="" /></i>
+      </div>
+      <div class="py-1 px-3">
+        <i><img class="w-6 h-6 relative -top-0.5" src="assets/icons/signin.jpg" alt="" /></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider Carousel -->
+  <div class="slider items-center lg:flex-row lg:bg-[#fff6ed] w-full overflow-hidden">
+    <!-- Content for carousel slides -->
+    <div id="carousel" class="flex transition-transform duration-500 w-full">
+      <!-- Slide 1 -->
+      <div class="flex flex-col-reverse md:items-center lg:flex-row lg:bg-[#fff6ed] w-full flex-shrink-0 items-start">
+        <div
+          class="left p-10 w-10/12 md:p-14 relative lg:block bg-white lg:bg-[#fff6ed] shadow-4xl lg:w-1/2 border-2 border-gray-200 shadow-4xl mx-2 lg:border-0 lg:text-left z-10 -top-6.5 lg:top-0">
+          <h1 class="text-2xl md:text-3xl font-bold mb-6">
+            Copilot is your AI companion
+          </h1>
+          <p class="mb-6">
+            Always by your side, ready to support you whenever and wherever
+            you need it.
+          </p>
+          <button class="bg-blue-600 text-white px-6 py-3 rounded-sm hover:bg-blue-500">
+            <a href="#">Download the Copilot app</a>
+          </button>
+        </div>
+        <div class="right lg:bg-[#fff6ed]">
+          <img src="src/images/slideraiimg.avif" alt="AI Slide" />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="flex flex-col-reverse md:items-center lg:flex-row lg:bg-[#aecef7] w-full flex-shrink-0 items-start">
+        <div
+          class="left p-10 w-10/12 lg:p-14 relative lg:block bg-white lg:bg-[#aecef7] shadow-4xl lg:w-1/2 border-2 border-gray-200 shadow-4xl mx-4 lg:border-0 lg:text-left z-10 -top-6.5 lg:top-0">
+          <h1 class="text-2xl md:text-3xl font-bold mb-6">
+            Microsoft 365 for your work
+          </h1>
+          <p class="mb-6">
+            Work smarter with powerful tools like Word, Excel, and Teams.
+          </p>
+          <button class="bg-blue-600 text-white px-6 py-3 rounded-sm hover:bg-blue-500">
+            <a href="#">Try Microsoft 365</a>
+          </button>
+        </div>
+        <div class="right lg:bg-[#aecef7] w-fit h-full object-cover">
+          <img class="w-fit h-full object-cover" src="src/images/slideraiimg2.jpg" alt="Microsoft 365 Slide" />
+        </div>
+      </div>
+    </div>
+    <!-- slides end -->
+  </div>
+
+  <!-- Buttons and dots for carousal -->
+  <div class="flex justify-center">
+    <div id="dots" class="bottom-4 left-1/2 flex space-x-2">
+      <button class="prev-btn text-3xl p-3">‹</button>
+      <button class="dot w-3 h-3 mx-4 mt-7 rounded-full border-2 border-black bg-black"></button>
+      <button class="dot w-3 h-3 mx-4 mt-7 rounded-full border-2 border-black bg-transparent"></button>
+      <button class="next-btn text-3xl p-3">›</button>
+    </div>
+  </div>
+  <!-- Important box links -->
+  <div class="flex flex-col lg:flex-row justify-center items-center mt-10 mb-10 px-15">
+    <!-- 1 -->
+    <a href="#">
+      <div class="flex flex-col items-start mr-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p1.webp" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium">Microsoft Edge</h2>
+        <p class="px-5 pt-2">
+          World-class performance with more privacy, more productivity, and more
+          value while you browse.
+        </p>
+
+        <button class="bg-blue-700 text-white px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Download now</a>
+        </button>
+      </div>
+    </a>
+
+    <!-- 2 -->
+
+    <a href="#">
+      <div class="flex flex-col items-start m-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p2.avif" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium">Make the world closer with Bing Wallpaper</h2>
+        <p class="px-5 pt-2">
+          Download the free app and enjoy breathtaking views with a new background each day.
+        </p>
+
+        <button class="bg-blue-700 text-white px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Get Bing Wallpaper</a>
+        </button>
+      </div>
+    </a>
+
+    <!-- 3 -->
+
+    <a href="#">
+      <div class="flex flex-col items-start m-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p3.jfif" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium"> Designed for life today — and tomorrow</h2>
+        <p class="px-5 pt-2">
+          The next-generation of games.
+          Your goals. Friends and family.
+          Windows 11 was made to
+          bring you closer to everything
+          you love.
+        </p>
+
+        <button class="bg-blue-700 text-white px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">See if your PC is ready</a>
+        </button>
+      </div>
+    </a>
+
+    <!-- 4 -->
+
+    <a href="#">
+      <div class="flex flex-col items-start m-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p4.webp" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium">Microsoft OneDrive</h2>
+        <p class="px-5 pt-2">
+          Save your files and photos to
+          OneDrive and access them
+          from any device, anywhere.
+        </p>
+
+        <button class="bg-blue-700 text-white px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Learn more</a>
+        </button>
+      </div>
+    </a>
+  </div>
+
+
+  <!-- organize your life part -->
+  <div class="relative">
+    <img class="py-10 md:p-15 " src="src/images/pl1.avif" alt="">
+    <div class=" lg:w-100 p-10 bg-white lg:absolute lg:left-180 lg:top-50">
+      <h2 class="text-3xl font-medium pb-5 pt-3">Organise your life</h2>
+      <p class="pb-5">Keep your ideas and notes organised with OneNote.</p>
+      <button class="bg-blue-700 text-white px-4 py-2  hover:bg-blue-800 mt-auto">
+        <a href="#">Learn more</a>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- For Buisness -->
+  <h2 class="text-3xl px-15 font-medium ">For Buisness</h2>
+  <div class="flex flex-col lg:flex-row justify-center items-center  mb-10 px-15">
+    <!-- 1 -->
+    <a href="#">
+      <div class="flex flex-col items-start mr-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p21.avif" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium">Microsoft 365 Copilot</h2>
+        <p class="px-5 pt-2">
+          Save time and focus on the
+          things that matter most with
+          A1 in Microsoft 365 for
+          business.
+        </p>
+
+        <button class="bg-blue-700 text-white px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Learn more</a>
+        </button>
+      </div>
+    </a>
+
+    <!-- 2 -->
+
+    <a href="#">
+      <div class="flex flex-col items-start m-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p22.avif" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium">Welcome to your Windows 365 Cloud</h2>
+        <p class="px-5 pt-2">
+          Securely stream your Windows
+          experience from the Microsoft
+          cloud to any device.
+        </p>
+
+        <button class="bg-blue-700 text-white px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Get it today</a>
+        </button>
+      </div>
+    </a>
+
+    <!-- 3 -->
+
+    <a href="#">
+      <div class="flex flex-col items-start m-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p33.avif" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium"> Get Microsoft Teams for your business
+        </h2>
+        <p class="px-5 pt-2">
+          Online meetings, chat, real-
+          time collaboration, and shared
+          cloud storage — all in one
+          place.
+        </p>
+
+        <button class="bg-blue-700 text-white text-left px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Find the right plan for your business</a>
+        </button>
+      </div>
+    </a>
+
+    <!-- 4 -->
+
+    <a href="#">
+      <div class="flex flex-col items-start m-4 w-64 h-115 box-border border-black-2 shadow-2xl">
+        <img class="w-60 h-auto" src="src/images/p24.webp" alt="Microsoft Edge" />
+        <h2 class="text-2xl px-5 pt-4 font-medium"> Visual Studio 2022</h2>
+        <p class="px-5 pt-2">
+          Get the most comprehensive
+          IDE for .NET and C++
+          developers on Windows for
+          building web, cloud, desktop,
+          mobile apps, services and
+          games.
+        </p>
+
+        <button class="bg-blue-700 text-white text-left px-4 py-2 m-5 hover:bg-blue-800 mt-auto">
+          <a href="#">Download Visual Studio 2022</a>
+        </button>
+      </div>
+    </a>
+  </div>
+
+  <div class="px-15 flex mb-20 ">
+    <h2 class="p-1 px-3">Follow Microsoft</h2>
+    <a class="px-2 pl-5" href="#"><img class="w-8" src="src/images/Facebook 2x.avif" alt=""></a>
+    <a class="px-2" href="#"><img class="w-8" src="src/images/X.webp" alt=""></a>
+    <a class="px-2" href="#"><img class="w-8" src="src/images/Linkedin 2x.avif" alt=""></a>
+  </div>
+
+  <footer class="bg-[#f2f2f2]  py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid mx-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+
+        <!-- What's new -->
+        <div>
+          <h2 class="text-md font-semibold mb-4">What's new</h2>
+          <ul class="text-xs space-y-5">
+            <li><a href="#" class="hover:underline">Surface Pro</a></li>
+            <li><a href="#" class="hover:underline">Copilot for organizations</a></li>
+            <li><a href="#" class="hover:underline">Copilot for personal use</a></li>
+            <li><a href="#" class="hover:underline">Microsoft 365</a></li>
+            <li><a href="#" class="hover:underline">Explore Microsoft products</a></li>
+            <li><a href="#" class="hover:underline">Windows 11 apps</a></li>
+          </ul>
+        </div>
+
+        <!-- Microsoft Store -->
+        <div>
+          <h2 class="text-md font-semibold mb-4">Microsoft Store</h2>
+          <ul class="text-xs space-y-5">
+            <li><a href="#" class="hover:underline">Account profile</a></li>
+            <li><a href="#" class="hover:underline">Download Center</a></li>
+            <li><a href="#" class="hover:underline">Returns</a></li>
+            <li><a href="#" class="hover:underline">Order tracking</a></li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h2 class="text-md font-semibold mb-4">Education</h2>
+          <ul class="text-xs space-y-5">
+            <li><a href="#" class="hover:underline">Microsoft in education</a></li>
+            <li><a href="#" class="hover:underline">Devices for education</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Teams for Education</a></li>
+            <li><a href="#" class="hover:underline">Microsoft 365 Education</a></li>
+            <li><a href="#" class="hover:underline">Office Education</a></li>
+            <li><a href="#" class="hover:underline">Educator training and development</a></li>
+            <li><a href="#" class="hover:underline">Deals for students and parents</a></li>
+            <li><a href="#" class="hover:underline">Azure for students</a></li>
+          </ul>
+        </div>
+
+        <!-- Business -->
+        <div>
+          <h2 class="text-md font-semibold mb-4">Business</h2>
+          <ul class="text-xs space-y-5">
+            <li><a href="#" class="hover:underline">Microsoft Cloud</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Security</a></li>
+            <li><a href="#" class="hover:underline">Azure</a></li>
+            <li><a href="#" class="hover:underline">Dynamics 365</a></li>
+            <li><a href="#" class="hover:underline">Microsoft 365</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Advertising</a></li>
+            <li><a href="#" class="hover:underline">Microsoft 365 Copilot</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Teams</a></li>
+          </ul>
+        </div>
+
+        <!-- Developer & IT -->
+        <div>
+          <h2 class="text-md font-semibold mb-4">Developer & IT</h2>
+          <ul class="text-xs space-y-5">
+            <li><a href="#" class="hover:underline">Microsoft Developer</a></li>
+            <li><a href="#" class="hover:underline">Documentation</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Learn</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Tech Community</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Marketplace</a></li>
+            <li><a href="#" class="hover:underline">Microsoft Power Platform</a></li>
+            <li><a href="#" class="hover:underline">Visual Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h2 class="text-md font-semibold mb-4">Company</h2>
+          <ul class="text-xs space-y-5">
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">About Microsoft</a></li>
+            <li><a href="#" class="hover:underline">Company news</a></li>
+            <li><a href="#" class="hover:underline">Privacy at Microsoft</a></li>
+            <li><a href="#" class="hover:underline">Investors</a></li>
+            <li><a href="#" class="hover:underline">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex px-15 items-center justify-between mt-10 text-xs space-x-4">
+      <div class="flex space-x-6">
+      <a class="flex items-center space-x-2 hover:underline" href="#"><img src="assets/icons/globe-europe-africa-fill.svg" alt="">
+        <span>English (Pakistan)</span></a>
+      <a class="flex items-center space-x-2 hover:underline" href="#"><img class="w-12" src="assets/icons/footer02.png" alt="">
+        <span class="pt-1">Your Privacy Choices</span></a>
+      <a class="flex items-center space-x-2 hover:underline" href="#"><span class="pt-1">Consumer Health Privacy</span></a>
+    </div>
+      <ul class="flex flex-wrap items-center gap-4">
+        <li><a href="#" class="hover:underline">Contact Microsoft</a></li>
+        <li><a href="#" class="hover:underline">Privacy</a></li>
+        <li><a href="#" class="hover:underline">Terms of use</a></li>
+        <li><a href="#" class="hover:underline">Trademarks</a></li>
+        <li><a href="#" class="hover:underline">About our ads</a></li>
+        <li class="text-gray-400">© Microsoft 2025</li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
