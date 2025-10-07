@@ -39,3 +39,31 @@ dots.forEach((dot, i) => {
     updateSlide();
   });
 });
+
+
+
+// All Microsoft menu toggle
+const togglelink = document.getElementById('all-microsoft');
+const megaMenu = document.getElementById('mega-menu');
+
+
+togglelink.addEventListener('click', (e) => {
+  e.stopPropagation();  
+  if (window.innerWidth >= 1024) {
+    megaMenu.classList.toggle('hidden');
+  }
+});
+
+// close the menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!togglelink.contains(e.target) && !megaMenu.contains(e.target)) {
+    megaMenu.classList.add('hidden');
+  }
+});
+
+//  hide menu automatically if resized below lg
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 1024) {
+    megaMenu.classList.add('hidden');
+  }
+});
